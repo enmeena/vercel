@@ -14,7 +14,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-DATA_PATH = Path(__file__).parent.parent / "q-vercel-latency.json"
+DATA_PATH = Path("q-vercel-latency.json")
 
 def load_data():
     with open(DATA_PATH) as f:
